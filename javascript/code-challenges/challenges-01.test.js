@@ -85,10 +85,16 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+
+  for(let i = 0; i < times; i++){
+    callback(arr, num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,6 +117,13 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  const newArr = [];
+  availableItems.forEach(element => {
+    if(element.available === true){
+      newArr.push(element.name);
+    }
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -129,6 +142,19 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  const newArr = [];
+  arr.forEach(element => {
+    if(element % 3 === 0 && element % 5 === 0){
+      newArr.push('Fizz Buzz');
+    }else if(element % 3 === 0){
+      newArr.push('Fizz');
+    }else if(element % 5 === 0){
+      newArr.push('Buzz');
+    }else{
+      newArr.push(element);
+    }
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -182,7 +208,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
