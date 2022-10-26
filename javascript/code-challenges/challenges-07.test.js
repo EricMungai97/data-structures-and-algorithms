@@ -69,7 +69,7 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  while(str !== ''){
+  while (str !== '') {
     result.push(str);
     str = str.slice(1);
   }
@@ -133,12 +133,15 @@ const gruffaloCrumble = {
   ],
 };
 
-
+//comment element is the empty spaces
 const listFoods = (recipe) => {
   let result = [];
-  for (let i of recipe.ingredients) {
-    result.push(i.split(' ').slice(2).join (' '));
-  }
+  recipe.ingredient.array.forEach(ingridient => {
+    let withoutAmount = ingridient.slice(ingridient.indexOf(' ') + 1);
+    let withoutUnit = withoutAmount.slice(withoutAmount.indexof('') + 1);
+    result.push(withoutUnit);
+  });
+
   return result;
 };
 
