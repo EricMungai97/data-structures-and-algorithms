@@ -123,7 +123,7 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
-  return arr.sort((a, b) => a[property] - b[property]);
+  return arr.sort((a, b) => a[property] > b[property] ? 1 : -1);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -165,9 +165,25 @@ Here is a sample board:
 
 const detectTicTacToeWin = (board) => {
   // Solution code here...
-  let helpCheck = (row1, col1, row2, col2, row3, col3) => {
+  const helpCheck = (row1, col1, row2, col2, row3, col3) => {
+    return board[row1][col1] !== '' && // make sure the cell isn't empty
+    board[row1][col1] === board[row2][col2] &&
+    board[row2][col2] === board[row3][col3];
+  };
 
-  });
+  if(helpCheck(0,0,0,1,0,2)) return true; //top row
+  if(helpCheck(1,0,1,1,1,2)) return true; //middle row
+  if(helpCheck(2,0,2,1,2,2)) return true; // bottom row
+
+  if(helpCheck(0,0,1,0,2,0)) return true; // left column
+  if(helpCheck(0,1,1,1,2,1)) return true; //middle column
+  if(helpCheck(0,2,1,2,2,2)) return true; //right column
+
+  if(helpCheck(0,0,1,1,2,2)) return true; // top left to bottom right
+  if(helpCheck(0,2,1,1,2,0)) return true; //to right to bottom left
+
+  return false;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
