@@ -25,3 +25,4 @@ To run your tests
 ### Table of Contents
 
 1. [Array Reverse](python/docs/array_reverse/README.md)
+2. [Array Insert Shift](python/docs/array_insert_shift/README.md)
