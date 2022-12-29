@@ -31,4 +31,5 @@ To run your tests
 5. [Linked List Insertions](python/docs/linked_list_insertions/README.md)
 6. [Linked List kth](python/docs/linked_list_kth/README.md)
 7. [Linked List Zip](python/docs/linked_list_zip/README.md)
+8. [Stacks and queues](python/docs/stack_and_queue/README.md)
 
