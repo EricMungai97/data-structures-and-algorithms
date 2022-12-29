@@ -22,3 +22,18 @@ Created a pointer for each current of each of our two linked lists. I then creat
 Big O:
 Time O(n) time taken increases linearly with size of input
 Space O(n) space increases linearly with size of input
+
+## Solution
+
+```
+
+linked_list1 = (1) -> (2) -> (3) -> (4) -> None
+linked_list2 = (5) -> (6) -> (7) -> (8) -> None
+
+zip_lists(linked_list1, linked_list2)
+
+output # (1) -> (5) -> (2) -> (6) -> (3) -> (7) -> (4) -> (8) -> None
+
+```
+
+[Link to code](/python/code_challenges/linked_list_zip.py)
