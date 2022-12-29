@@ -41,3 +41,4 @@ linked_list.insert_after(3, 6)
 output head -> (2) -> (3) -> (6) -> (1) -> (4) -> (5) None
 ```
 
+[Link to code](/python/data_structures/linked_list.py)
