@@ -10,6 +10,12 @@ Using a Linked List as the underlying data storage mechanism, implement both a S
 
 ## Approach & Efficiency
 
+I imported the Node class from linked_list.py
+
+I then created a stack class with top property  and methods
+
+Lastly I created a queue class with front property and rear property and methods.
+
 All Stack and Queue methods detailed below run in constant time, O(1). This is because direct references allow constant time access to the top of a stack, and to both the front and rear of a queue.
 
 ## API
