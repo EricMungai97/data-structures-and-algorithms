@@ -35,5 +35,16 @@ Time Big 0: O(n) because traversing twice and 2n reduces to O(n)
 
 Space Big O: O(1) because we are only storing a few variables not related to input size.
 
+## Solution
 
+```
+linked_list = head -> (2) -> (3) -> (4) -> None
+
+linked_list.kth_from_end(1)
+
+Output 3
+
+```
+
+ [Link to code](/python/data_structures/linked_list.py)
 
