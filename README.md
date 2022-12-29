@@ -29,3 +29,4 @@ To run your tests
 3. [Array Binary Search](python/docs/array_binary_search/README.md)
 4. [Linked List](python/docs/linked_list/README.md)
 5. [Linked List Insertions](python/docs/linked_list_insertions/README.md)
+6. [Linked List Zip](python/docs/linked_list_zip/README.md)
