@@ -98,6 +98,32 @@ class LinkedList:
             else:
                 current = current.next
 
+    def kth_from_end(self, k):
+        # Return the node’s value that is k places from the tail of the linked list.
+        length = 0
+        current = self.head
+        # finds the length of the linked list
+        while current:
+            length += 1
+            current = current.next
+        # index of the target value
+        target = length - k
+
+        if k >= length:
+            raise TargetError('k exceeds list length')
+
+        if k < 0:
+            raise TargetError('k must be a positive integer')
+        # if index of target value equal 0 return head.value
+        if target == 0:
+            return self.head.value
+
+        current = self.head
+
+        for i in range(target - 1):
+            current = current.next
+        return current.value
+
 
 class TargetError(Exception):
     def __init__(self, message):
