@@ -23,3 +23,21 @@ adds a new node with the given new value immediately after the first node that h
 * Space big O: O(1): The script is making only one object and appending it to a linked list that already exists, so no matter the input, this takes the same amount of memory.
 
 
+## Solution
+
+```
+linked_list = head -> (2) -> (3) -> (4) -> None
+
+linked_list.append(5)
+
+output head -> (2) -> (3) -> (4) -> (5) None
+
+linked_list.insert_before(4, 1)
+
+output head -> (2) -> (3) -> (1) -> (4) -> (5) None
+
+linked_list.insert_after(3, 6)
+
+output head -> (2) -> (3) -> (6) -> (1) -> (4) -> (5) None
+```
+

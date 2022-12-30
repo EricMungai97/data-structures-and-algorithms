@@ -52,6 +52,7 @@ class LinkedList:
         # adds a new node with the given value to the end of the list
 
         current = self.head
+        # new node is final node
         final_node = Node(value)
         if current is None:
             current = Node(value)
