@@ -30,3 +30,5 @@ To run your tests
 4. [Linked List](python/docs/linked_list/README.md)
 5. [Linked List Insertions](python/docs/linked_list_insertions/README.md)
 6. [Linked List kth](python/docs/linked_list_kth/README.md)
+7. [Linked List Zip](python/docs/linked_list_zip/README.md)
+
