@@ -32,5 +32,6 @@ To run your tests
 6. [Linked List kth](python/docs/linked_list_kth/README.md)
 7. [Linked List Zip](python/docs/linked_list_zip/README.md)
 8. [Stacks and queues](python/docs/stack_and_queue/README.md)
-9. [stack-queue-pseudo](/python/code_challenges/stack_queue_pseudo.py)
+9. [stack-queue-pseudo](/python/docs/stack_and_queue/README.md)
+10. [stack_queue_animal_shelter](/python/docs/stack_queue_animal_shelter/README.md)
 
