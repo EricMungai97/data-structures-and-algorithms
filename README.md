@@ -34,4 +34,4 @@ To run your tests
 8. [Stacks and queues](python/docs/stack_and_queue/README.md)
 9. [stack-queue-pseudo](/python/docs/stack_and_queue/README.md)
 10. [stack_queue_animal_shelter](/python/docs/stack_queue_animal_shelter/README.md)
-
+11. [stack-queue-brackets](/python/docs/stack_queue_brackets/README.md)
