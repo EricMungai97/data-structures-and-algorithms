@@ -82,3 +82,7 @@ post_order(self): This method will search the binary tree in the order of the le
 add(value): This method will add a node after searching for the location to add it in the tree.
 
 contains(value): This method will search the nodes and return a boolean if the value searching for exists in the tree.
+
+[Link to Code](/python/data_structures/binary_tree.py)
+
+[Link to Code](/python/data_structures/binary_search_tree.py)
