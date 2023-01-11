@@ -9,28 +9,26 @@ class Queue:
         self.rear = None
 
     def enqueue(self, value):
-        # check to see if queue is empty
-        new_node = Node(value)
-        if self.front is None:
-            self.front = new_node
+        # check to see if queue is empty!
         if self.rear:
-            self.rear.next = new_node
-            self.rear = new_node
-        else:
-            self.rear = new_node
-        # if self.rear:
-        #     self.rear.next = Node(value)
-        #     self.rear = self.rear.next
-        #     return
-        # self.rear = self.front = Node(value)
+            self.rear.next = Node(value)
+            self.rear = self.rear.next
+            return
+        self.rear = self.front = Node(value)
 
     def dequeue(self):
+        # consider a queue with only 1 node
+        # TODO: refactor class to include a .length
         if self.front is None:
             raise InvalidOperationError
-        else:
+        if self.front == self.rear:
             dequeued = self.front
-            self.front = self.front.next
+            self.front = self.rear = None
             return dequeued.value
+
+        dequeued = self.front
+        self.front = self.front.next
+        return dequeued.value
 
     def peek(self):
         if self.front is None:
