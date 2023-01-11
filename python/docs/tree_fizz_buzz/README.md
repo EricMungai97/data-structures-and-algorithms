@@ -25,12 +25,4 @@ then breadth traverse the clone_tree using a while loop. On traversal of each no
 
 ## Solution
 
-```
-def tree():
-  one = Node(1)
-  two = Node(2)
-  three = Node(3)
-  four = Node(4)
-    ```
-
 [Link To Code](/python/code_challenges/tree_fizz_buzz.py)
