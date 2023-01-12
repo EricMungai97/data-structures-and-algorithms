@@ -21,7 +21,12 @@ Determine whether or not the value of each node is divisible by 3, 5 or both. Cr
 ![tree-fizz-buzz](/python/docs/tree_fizz_buzz/tree-fizz-buzz.png)
 
 ## Approach & Efficiency
-then breadth traverse the clone_tree using a while loop. On traversal of each node, I assigned that nodes value to the return of my get_fizz_buzz_val function taking in that nodes value as an argument. I then returned the clone_tree.
+I first created a function to get return fizz,buzz of fizzbuzz. I then cloned the kary tree. I created a queue. I then enqueue the root of our clone_tree.
+I then breadth traverse the clone_tree using a while loop. On traversal of each node, I assigned that nodes value to the return of my get_fizz_buzz_val function taking in that nodes value as an argument. I then returned the clone_tree.
+
+Big O:
+ Time: O(n) since we have to traverse the whole kary tree
+ Space: O(n) we are creating a new kary tree
 
 ## Solution
 
