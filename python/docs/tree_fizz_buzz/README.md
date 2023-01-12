@@ -25,7 +25,7 @@ I first created a function to get return fizz,buzz of fizzbuzz. I then cloned th
 I then breadth traverse the clone_tree using a while loop. On traversal of each node, I assigned that nodes value to the return of my get_fizz_buzz_val function taking in that nodes value as an argument. I then returned the clone_tree.
 
 Big O:
- Time: O(n) since we have to traverse the whole kary tree
+ Time: O(n2) since we have to traverse the kary tree with a while loop with a nested for loop.
  Space: O(n) we are creating a new kary tree
 
 ## Solution
