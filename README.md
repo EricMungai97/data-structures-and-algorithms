@@ -39,3 +39,4 @@ To run your tests
 13. [Tree_max](/python/docs/tree_max/README.md)
 14. [tree_breadth_first](/python/docs/tree_breadth_first/README.md)
 15. [tree_fizz_buzz](/python/docs/tree_fizz_buzz/README.md)
+16. [Insertion Sort](/sorting/insertion/README.md)
