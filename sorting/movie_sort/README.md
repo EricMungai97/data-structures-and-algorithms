@@ -22,5 +22,5 @@ Space: O(n) since in merge sort all elements are copied into an auxiliary array.
 
 ## Solution
 
-[Link to Code](/python/code_challenges/merge_sort.py)
+[Link to Code](/python/code_challenges/movie_sort.py)
 [Link to Test](/python/tests/code_challenges/test_movie_sort.py)
