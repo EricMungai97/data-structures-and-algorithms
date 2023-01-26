@@ -9,6 +9,9 @@ def merge_sort(list):
         merge_sort(right)
 
         i = j = k = 0
+        # i left arr idx
+        # j right arr idx
+        # k merged arr idx
 
         while i < len(left) and j < len(right):
             if left[i] < right[j]:
@@ -19,11 +22,12 @@ def merge_sort(list):
                 j += 1
             k += 1
 
+        # for case where the right arr is empty
         while i < len(left):
             list[k] = left[i]
             i += 1
             k += 1
-
+        # for case where left arr is empty
         while j < len(right):
             list[k] = right[j]
             j += 1
