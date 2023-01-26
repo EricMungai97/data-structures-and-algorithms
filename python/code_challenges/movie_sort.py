@@ -87,6 +87,7 @@ def year_merge(left, right, movie_list):
             i += 1
         k += 1
 
+
     if i == len(left):
         for idx in range(j, len(right)):
             movie_list[k] = right[idx]

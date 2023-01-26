@@ -41,4 +41,4 @@ To run your tests
 15. [tree_fizz_buzz](/python/docs/tree_fizz_buzz/README.md)
 16. [Insertion Sort](/sorting/insertion/README.md)
 17. [Merge Sort](/sorting/merge/README.md)
-
+18. [Movie Sort](/sorting/movie_sort/README.md)
