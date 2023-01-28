@@ -42,3 +42,4 @@ To run your tests
 16. [Insertion Sort](/sorting/insertion/README.md)
 17. [Merge Sort](/sorting/merge/README.md)
 18. [Movie Sort](/sorting/movie_sort/README.md)
+19. [Hashtable](python/docs/hashtable/README.md)
