@@ -22,4 +22,4 @@ The adjacency list is implemented as a hashmap, resulting in constant time O(1) 
 * add_edge(node1, node2): adds an edge between 2 nodes in the graph
 * get_nodes(): returns all nodes in the graph
 * get_neighbors(node): returns all neighbor nodes of provided node
-* size(): returns number of nodes in the graph
+* size(): returns number of nodes in the graph.
