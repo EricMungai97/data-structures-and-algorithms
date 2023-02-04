@@ -50,4 +50,4 @@ class Edge:
     def __init__(self, vertex, weight=None):
         self.vertex = vertex
         self.weight = weight
-        
+
